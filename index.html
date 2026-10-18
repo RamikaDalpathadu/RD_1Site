@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy 1st Anniversary 💕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky"></canvas>
+
+<!-- INTRO: sealed envelope -->
+<div id="intro">
+  <div class="env" id="env" tabindex="0" role="button" aria-label="Open the letter">
+    <div class="flap"></div>
+    <div class="seal">♥</div>
+  </div>
+  <p class="hint">A little letter for <span class="her"></span>…<br><small>tap the seal to open</small></p>
+</div>
+
+<main id="site" class="hidden">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="date">24 · 10 · 2026</p>
+    <h1>Happy 1st Anniversary,<br><span class="her script"></span></h1>
+    <p class="sub">One year ago, a duet at the University of Ruhuna turned two voices into one heart.</p>
+    <div class="counter" id="counter"></div>
+    <a href="#story" class="down" aria-label="Scroll">♥</a>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="sec">
+    <h2 class="script">Where it all began</h2>
+    <div class="story-card reveal">
+      <div class="photo" data-src="images/first-meet.jpg" data-label="Our first duet / University of Ruhuna"></div>
+      <p>It started at the <b>University of Ruhuna</b>. A stage, a microphone, and a duet we had barely rehearsed. I was only supposed to sing a song. Instead, I found my favourite harmony — <b>you</b>.</p>
+      <p>Somewhere between the first note and the last, the whole room faded, and I knew I wanted to share every song after that with you.</p>
+    </div>
+  </section>
+
+  <!-- MEMORIES -->
+  <section class="sec">
+    <h2 class="script">Our memories</h2>
+    <div class="timeline">
+      <article class="mem reveal">
+        <div class="photo" data-src="images/memory1.jpg" data-label="Memory 1"></div>
+        <h3>The first duet</h3><p>Nervous hands, shaky voices, and a smile I never forgot.</p>
+      </article>
+      <article class="mem reveal">
+        <div class="photo" data-src="images/memory2.jpg" data-label="Memory 2"></div>
+        <h3>Our first date</h3><p>Write a few sweet words about this day here.</p>
+      </article>
+      <article class="mem reveal">
+        <div class="photo" data-src="images/memory3.jpg" data-label="Memory 3"></div>
+        <h3>Singing together again</h3><p>Another stage, another song, same heartbeat.</p>
+      </article>
+      <article class="mem reveal">
+        <div class="photo" data-src="images/memory4.jpg" data-label="Memory 4"></div>
+        <h3>My favourite day</h3><p>Add your favourite memory of us here.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="sec">
+    <h2 class="script">Our songs</h2>
+    <p class="lead">Every song we sang together, in one place.</p>
+    <div class="player reveal">
+      <div class="vinyl" id="vinyl"><span>♥</span></div>
+      <div class="pbody">
+        <h3 id="ttl">Song title</h3>
+        <p id="evt">Event / place</p>
+        <input type="range" id="bar" value="0" min="0" max="100" aria-label="Progress">
+        <div class="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+        <div class="ctrl">
+          <button id="prev" aria-label="Previous">⏮</button>
+          <button id="play" class="big" aria-label="Play">▶</button>
+          <button id="next" aria-label="Next">⏭</button>
+        </div>
+      </div>
+      <ol id="list"></ol>
+      <audio id="audio" preload="metadata"></audio>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="sec">
+    <h2 class="script">Why I love you</h2>
+    <p class="lead">Tap a heart.</p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="sec">
+    <h2 class="script">A letter for you</h2>
+    <div class="letter reveal"><p id="letter"></p><p class="sign script" id="sign"></p></div>
+  </section>
+
+  <!-- FINALE -->
+  <section class="sec finale">
+    <h2 class="script">One more thing…</h2>
+    <button id="surprise" class="btn">Press here, my love</button>
+    <p id="final" class="final"></p>
+  </section>
+
+  <footer>Made with all my heart · 24 October 2026</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

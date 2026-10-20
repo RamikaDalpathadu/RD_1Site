@@ -1,15 +1,12 @@
 /* ============ EDIT YOUR DETAILS HERE ============ */
 const CONFIG = {
-  herName: "My Love",            // her name / nickname
-  yourName: "Your Name",         // your name
+  herName: "Suduuu",            // her name / nickname
+  yourName: "Ramiii",         // your name
   startDate: "2025-10-24",       // the day you fell in love
   // Put your mp3 files in the "songs" folder and list them here
   songs: [
-    { title: "Our First Duet",   event: "University of Ruhuna",   file: "songs/song1.mp3" },
-    { title: "Song Two",         event: "Event / place",          file: "songs/song2.mp3" },
-    { title: "Song Three",       event: "Event / place",          file: "songs/song3.mp3" },
-    { title: "Song Four",        event: "Event / place",          file: "songs/song4.mp3" },
-    { title: "Song Five",        event: "Event / place",          file: "songs/song5.mp3" }
+    { title: "Ahasin Ehaa",   event: "Symposium '25",   file: "songs/song1.mp3" },
+    
   ],
   reasons: [
     "Your voice is my favourite song",
@@ -20,7 +17,7 @@ const CONFIG = {
     "You make ordinary days magical"
   ],
   letter:
-`My dearest love,
+`Thuduuuuu,
 
 A year ago I walked into a duet at Ruhuna with no idea that my life was about to change. Now every song I love has your voice in it.
 
